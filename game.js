@@ -6,8 +6,10 @@ const bg = document.querySelector("#container");
 
 const updateScore = function() {
   var inv = setInterval(function() {
-    if (resource < maxResource) {
-      resourceDisplay.textContent = resource++;
+    if (resource <= maxResource) {
+      resource++;
+      resourceDisplay.textContent = resource;
+      document.title = resource;
     } else {
       clearInterval(inv);
     }
@@ -24,5 +26,7 @@ const keyPresses = function (ev) {
   }
 }
 
+
+// Apparently if the user switches tab, the interval time will be slower in inactive window than to active window.
 updateScore();
 addEventListener('keypress', keyPresses);
