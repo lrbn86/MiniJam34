@@ -1,0 +1,20 @@
+Game Design Document
+
+Theme: Balance
+Limitation: Only two buttons
+
+
+The two buttons that will be used will be 'z' and 'x'.
+
+Genre?
+* Action
+* No Platformer
+* Rail
+* The game will automatically move the player
+  * All the player has to do is press the two above buttons for gameplay
+
+Gameplay?
+* Beat a boss
+* Go through many levels
+* Rail shooter, just need to press the key at the right time? May be too difficult
+* Resource Management seems easier to do.
